@@ -1,9 +1,18 @@
-new Splide('#kategorien-splide', {
-            type: 'loop',
-            perPage: 1,
-            arrows: true,
-            pagination: false,
-            gap: '3rem',
-            speed: 800,
-            easing: 'cubic-bezier(0.25, 0.1, 0.25, 1)',
-        }).mount();
+
+        let splide = new Splide('#kategorien-splide', {
+    type: 'loop',
+    perPage: 1,
+    focus: 'center',
+    gap: '2rem',
+    padding: { left: '20%', right: '20%' },
+    autoplay: true,
+    interval: 20000,
+    arrows: true,
+    pagination: false,
+    pauseOnHover: false,
+    speed: 500,
+    drag: true,
+    swipe: true,
+  });
+
+  splide.mount();
