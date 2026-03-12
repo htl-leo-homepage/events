@@ -120,10 +120,41 @@ h3 {
 }
 
 
-
 /**********************
-* HEADER
+* SPLIDE KATEGORIEN
 **/
+#kategorien-splide {
+    /* give room for arrows outside the track */
+    padding: 0 3rem;
+}
+
+#kategorien-splide .splide__arrow {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#kategorien-splide .splide__arrow--prev {
+    left: 0;
+}
+
+#kategorien-splide .splide__arrow--next {
+    right: 0;
+}
+
+#kategorien-splide .splide__arrow svg {
+    fill: #ffffff;
+    width: 2rem;
+    height: 2rem;
+}
+
+#kategorien-splide .splide__arrow:hover svg {
+    fill: rgba(255, 255, 255, 0.7);
+}
+
 .site-header {
     position: relative;
     background: url("../img/headerbg.png") no-repeat center center;
