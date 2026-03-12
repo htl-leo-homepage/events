@@ -1,2 +1,2 @@
-# fotowettbewerb
-Fotowettbewerb der IT-Medientechnik
+# HTL Leonding Events
+Interne Events für Schüler:innen der HTL Leonding
