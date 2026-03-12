@@ -1,0 +1,89 @@
+/**********************
+* FONT
+**/
+@font-face {
+	font-family: 'Manrope-Light';
+	src: url('font/Manrope-Light.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: 'Manrope-Regular';
+	src: url('font/Manrope-Regular.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: 'Manrope-Bold';
+	src: url('font/Manrope-Bold.ttf');
+	font-display: fallback;
+}
+
+
+
+/**********************
+* GENERAL
+**/
+:root {
+    --color-white: #ffffff;
+    --color-turquoise-start: #00c9ff;
+    --color-turquoise-end: #92fe9d;
+    --font-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --spacing-unit: 1rem;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-base);
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.1rem; /* slightly larger base text */
+}
+
+main {
+    width: 100%;
+}
+
+.section {
+    padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
+    text-align: center; /* center headings/content by default */
+}
+
+.section--white {
+    background-color: var(--color-white);
+}
+
+.section--turquoise {
+    background: linear-gradient(180deg,#5e9dbf 27%,#2f5f7a 87%);
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* typography tweaks */
+h1, h2, h3 {
+    margin: 0 0 var(--spacing-unit) 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* white section content box */
+.content-box {
+    background-color: var(--color-white);
+    padding: calc(var(--spacing-unit) * 2);
+    border-radius: 1vw;
+    box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.3);
+    text-align: left; /* keep paragraphs left-aligned inside box */
+}
