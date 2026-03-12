@@ -35,16 +35,21 @@ body {
     font-family: var(--font-base);
     line-height: 1.6;
     color: #333;
-    font-size: 1.1rem; /* slightly larger base text */
+    font-size: 1.1rem;
 }
 
 main {
     width: 100%;
 }
 
+
+
+/**********************
+* SECTIONS
+**/
 .section {
     padding: calc(var(--spacing-unit) * 4) var(--spacing-unit);
-    text-align: center; /* center headings/content by default */
+    text-align: left;
 }
 
 .section--white {
@@ -61,7 +66,11 @@ main {
     margin: 0 auto;
 }
 
-/* typography tweaks */
+
+
+/**********************
+* TYPO
+**/
 h1, h2, h3 {
     margin: 0 0 var(--spacing-unit) 0;
     font-weight: bold;
@@ -73,6 +82,7 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 h3 {
@@ -80,10 +90,77 @@ h3 {
 }
 
 /* white section content box */
+.content-box-wrapper {
+    position: relative; /* allow decorative element */
+}
+.content-box-wrapper h2 {
+    position: relative;
+    z-index: 10;
+}
 .content-box {
+    position: relative;
     background-color: var(--color-white);
     padding: calc(var(--spacing-unit) * 2);
     border-radius: 1vw;
     box-shadow: 6px 6px 18px 0px rgba(0,0,0,0.3);
-    text-align: left; /* keep paragraphs left-aligned inside box */
+    text-align: left;
+    z-index: 10;
+}
+
+/* decorative image inside content box (using img tag) */
+.content-box-wrapper .content-decor {
+    position: absolute;
+    top: -12vw;
+    right: -14vw;
+    width: 50vw;
+    height: 40vw;
+    z-index: 5;
+    user-select: none;
+    pointer-events: none;
+}
+
+
+
+/**********************
+* HEADER
+**/
+.site-header {
+    position: relative;
+    background: url("../img/headerbg.png") no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    color: var(--color-white);
+}
+
+.site-header .header-content {
+    position: absolute;
+    left: 10vw;
+    bottom: 20vh;
+}
+
+.site-header .header-date {
+    display: block;
+    color: #ccc;
+    font-size: 1.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.site-header .header-title {
+    font-size: 3rem;
+    margin: 0;
+}
+.site-header .header-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.site-header .header-bar img {
+    height: 2.5rem;
+    width: auto;
 }
