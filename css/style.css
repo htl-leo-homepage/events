@@ -155,46 +155,39 @@ h3 {
 
 #kategorien-splide {
     position: relative;
-    padding: 0 3.5rem;
+    padding: 0 5rem;
 }
 
 #kategorien-splide .splide__track {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 1vw;
-    box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
+    overflow: visible;
 }
 
 #kategorien-splide .splide__slide {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1vw;
+    box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
     padding: calc(var(--spacing-unit) * 2);
 }
 
 #kategorien-splide .splide__arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background: transparent;
-    border: none;
     box-shadow: none;
-    opacity: 1;
-}
-
-#kategorien-splide .splide__arrow--prev {
-    left: 0;
-}
-
-#kategorien-splide .splide__arrow--next {
-    right: 0;
+    width: 3rem;
+    height: 3rem;
 }
 
 #kategorien-splide .splide__arrow svg {
     fill: #ffffff;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
 
-#kategorien-splide .splide__arrow:hover svg {
-    fill: rgba(255, 255, 255, 0.7);
+#kategorien-splide .splide__arrow:hover {
+    background: transparent;
+    opacity: 0.7;
 }
+
+
 
 .site-header {
     position: relative;
