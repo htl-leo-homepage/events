@@ -1,0 +1,23 @@
+/**********************
+* FONT
+**/
+@font-face {
+    font-family: 'Manrope-Light';
+    src: url('font/Manrope-Light.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('font/Manrope-Regular.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('font/Manrope-Bold.ttf');
+    font-display: fallback;
+}
+
+
+
