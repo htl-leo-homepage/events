@@ -19,7 +19,7 @@
 	border-radius: 1vw;
 	box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
 	padding: calc(var(--spacing-unit) * 2);
-	transform: scale(0.9);
+	transform: scale(0.9); /* PROBLEM */
 	transition: transform 400ms ease;
 }
 
